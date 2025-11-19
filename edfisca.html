@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paleoclimatología</title>
+    <style>
+      body {
+        background-color: #ffb6c1; /* Fondo rosado claro */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        margin-top: 50px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      .contenido {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+        max-width: 900px;
+        margin: 0 auto;
+        flex-grow: 1;
+      }
+
+      /* 🔹 Contenedor para las imágenes en fila */
+      .galeria {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      /* 🔹 Imágenes más pequeñas */
+      .galeria img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .galeria img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Barra lateral */
+      .sidebar {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 220px;
+        background-color: #f8f8f8;
+        padding-top: 20px;
+        border-right: 2px solid #333;
+        height: calc(100% - 100px);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        font-weight: bold;
+        z-index: 1000;
+      }
+
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .sidebar ul li {
+        margin: 15px 0;
+      }
+
+      .sidebar ul li a {
+        display: block;
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #45a049;
+      }
+
+      .content-wrapper {
+        margin-left: 220px;
+        flex-grow: 1;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="matematicas.html">MATEMÁTICAS</a></li>
+        <li><a href="espanol.html">ESPAÑOL</a></li>
+        <li><a href="edfisca.html">EDU. FÍSICA</a></li>
+        <li><a href="sociales.html">SOCIALES</a></li>
+        <li><a href="ingles.html">INGLÉS</a></li>
+        <li><a href="ambiental.html">EDU. AMBIENTAL</a></li>
+      </ul>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- 🔹 SECCIÓN DE EDU. FISICA -->
+      <div
+        id="edfisica"
+        class="contenido"
+        style="margin-top: 50px; text-align: center"
+      >
+        <h2>EDU. FISICA</h2>
+
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/1A46h1E25grzxUiBOKzfd7I2_89Eg6Q4x/edit?usp=sharing&ouid=101861682205173475366&rtpof=true&sd=true"
+          width="1200"
+          height="800"
+          style="border: 1px solid #ccc"
+        >
+          Tu navegador no soporta iframes.
+        </iframe>
+
+        <iframe
+          src="https://docs.google.com/document/d/1L_hWJyBowk7HsX-sfshcs2EUm83iiXWkQ0_etJ4tWPU/edit?usp=sharing"
+          width="1200"
+          height="800"
+          style="border: 1px solid #ccc"
+        >
+          Tu navegador no soporta iframes.
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>

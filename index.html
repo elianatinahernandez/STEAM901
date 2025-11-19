@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paleoclimatología</title>
+    <style>
+      body {
+        background-color: #ffb6c1; /* Fondo rosado claro */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        margin-top: 50px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      .contenido {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+        max-width: 900px;
+        margin: 0 auto;
+        flex-grow: 1;
+      }
+
+      /* 🔹 Contenedor para las imágenes en fila */
+      .galeria {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      /* 🔹 Imágenes más pequeñas */
+      .galeria img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .galeria img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Barra lateral */
+      .sidebar {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 220px;
+        background-color: #f8f8f8;
+        padding-top: 20px;
+        border-right: 2px solid #333;
+        height: calc(100% - 100px);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        font-weight: bold;
+        z-index: 1000;
+      }
+
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0 10px;
+        margin: 0;
+      }
+
+      .sidebar ul li {
+        margin: 15px 0;
+      }
+
+      .sidebar ul li a {
+        display: block;
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #45a049;
+      }
+
+      .content-wrapper {
+        margin-left: 220px;
+        flex-grow: 1;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="matematicas.html">MATEMÁTICAS</a></li>
+        <li><a href="espanol.html">ESPAÑOL</a></li>
+        <li><a href="edfisca.html">EDU. FÍSICA</a></li>
+        <li><a href="sociales.html">SOCIALES</a></li>
+        <li><a href="ingles.html">INGLÉS</a></li>
+        <li><a href="ambiental.html">EDU. AMBIENTAL</a></li>
+      </ul>
+    </div>
+
+    <div class="content-wrapper">
+      <h2>Proyecto STEAM</h2>
+      <h1>Paleoclimatología</h1>
+
+      <div class="contenido">
+        <p>
+          La paleoclimatología es la ciencia que estudia el clima de la Tierra
+          en el pasado geológico, analizando registros indirectos como los
+          anillos de árboles, los sedimentos oceánicos y los testigos de hielo
+          para reconstruir las condiciones climáticas de hace miles o millones
+          de años. Esta disciplina permite comprender las variaciones naturales
+          del clima y proporciona información crucial para contextualizar el
+          cambio climático actual y futuro. La palabra paleoclimatología se
+          deriva del griego “paleo” que significa “antiguo” y del término
+          "clima" (una especie de promedio de las condiciones atmosféricas), y
+          corresponde al estudio del clima en tiempos en que no existían
+          registros instrumentales de variables ambientales tales como la
+          temperatura, la radiación.
+        </p>
+
+        <ul>
+          <li>¿Qué estudia?</li>
+          <br />
+          <li>
+            Condiciones climáticas del pasado: Se interesa en variables como la
+            temperatura, la precipitación, el nivel del mar y la composición de
+            la atmósfera y los océanos en épocas donde no existían registros
+            instrumentales.
+          </li>
+          <li>
+            Variaciones climáticas: Analiza los cambios climáticos a lo largo de
+            la historia de la Tierra y sus causas, como calentamientos o
+            enfriamientos globales.
+          </li>
+          <li>
+            Respuesta de los ecosistemas: Permite entender cómo reaccionaron
+            diferentes ecosistemas a los cambios climáticos del pasado.
+          </li>
+        </ul>
+
+        <div class="galeria">
+          <img
+            src="https://0901.static.prezi.com/preview/v2/mz5otbndvutczidf7hlqldig476jc3sachvcdoaizecfr3dnitcq_3_0.png"
+            alt="Gráfico Paleoclimatología"
+          />
+          <img
+            src="https://blog.meteoclim.com/wp-content/uploads/2021/10/paleo5.png"
+            alt="Estudio Paleoclimatológico"
+          />
+          <img
+            src="https://cdn0.ecologiaverde.com/es/posts/0/6/8/que_es_y_que_estudia_la_paleoclimatologia_3860_0_600.jpg"
+            alt="Ecosistemas y Paleoclimatología"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
